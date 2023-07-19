@@ -129,6 +129,24 @@ p#avatar-p {
     padding-top: 55%;
 }
 
+@media screen and (min-width: 1900px) {
+    .product-card {
+        max-width: 400px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .product-card {
+        max-width: 370px;
+    }
+}
+
+@media screen and (min-width: 1450px) {
+    .product-card {
+        max-width: 320px;
+    }
+}
+
 @media screen and (min-width: 1200px) {
     #makePlace {
         padding-top: 75%;
