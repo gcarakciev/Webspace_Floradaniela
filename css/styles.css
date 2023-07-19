@@ -147,7 +147,7 @@ p#avatar-p {
     padding-top: 55%;
 }
 
-@media screen and (max-width: 535px) {
+@media all and (max-width: 535px) {
     iframe {
         width: 340px;
         height: 300px;
@@ -157,7 +157,7 @@ p#avatar-p {
     }
 }
 
-@media screen and (max-width: 635px) {
+@media all and (max-width: 635px) {
     button#continue-btn {
         margin-left: 28%;
     }
@@ -167,7 +167,7 @@ p#avatar-p {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media all and (max-width: 768px) {
     .hamburger {
         display: block;
     }
@@ -210,51 +210,51 @@ p#avatar-p {
     }
 }
 
-@media screen and (max-width: 1128px) {
+@media all and (max-width: 1128px) {
     iframe {
         width: 840px;
         height: 500px;
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media all and (max-width: 1200px) {
     li.nav-item.active {
         font-size: 17px;
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media all and (min-width: 1200px) {
     #makePlace {
         padding-top: 75%;
     }
 }
 
-@media screen and (max-width: 1328px) {
+@media all and (max-width: 1328px) {
     iframe {
         width: 1140px;
         height: 500px;
     }
 }
 
-@media screen and (min-width: 1450px) {
+@media all and (min-width: 1450px) {
     .product-card {
         max-width: 320px !important;
     }
 }
 
-@media screen and (min-width: 1500px) {
+@media all and (min-width: 1500px) {
     #makePlace {
         padding-top: 65%;
     }
 }
 
-@media screen and (min-width: 1600px) {
+@media all and (min-width: 1600px) {
     .product-card {
         max-width: 370px !important;
     }
 }
 
-@media screen and (min-width: 1900px) {
+@media all and (min-width: 1900px) {
     .product-card {
         max-width: 430px !important;
     }
