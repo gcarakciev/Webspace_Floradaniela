@@ -129,21 +129,40 @@ p#avatar-p {
     padding-top: 55%;
 }
 
-@media screen and (min-width: 1900px) {
-    .product-card {
-        max-width: 400px;
+@media screen and (max-width: 535px) {
+    iframe {
+        width: 340px;
+        height: 300px;
+    }
+    button#continue-btn {
+        margin-left: 24%;
     }
 }
 
-@media screen and (min-width: 1600px) {
-    .product-card {
-        max-width: 370px;
+@media screen and (max-width: 635px) {
+    button#continue-btn {
+        margin-left: 28%;
+    }
+    #aboutus-section {
+        padding: 0px !important;
+        padding-top: 3.5px !important;
     }
 }
 
-@media screen and (min-width: 1450px) {
-    .product-card {
-        max-width: 320px;
+@media screen and (max-width: 835px) {
+    iframe {
+        width: 540px;
+        height: 400px;
+    }
+    button#continue-btn {
+        margin-left: 34%;
+    }
+}
+
+@media screen and (max-width: 1128px) {
+    iframe {
+        width: 840px;
+        height: 500px;
     }
 }
 
@@ -160,46 +179,27 @@ p#avatar-p {
     }
 }
 
-@media screen and (max-width: 1128px) {
-    iframe {
-        width: 840px;
-        height: 500px;
-    }
-}
-
-@media screen and (max-width: 835px) {
-    iframe {
-        width: 540px;
-        height: 400px;
-    }
-    button#continue-btn {
-        margin-left: 34%;
-    }
-}
-
-@media screen and (max-width: 635px) {
-    button#continue-btn {
-        margin-left: 28%;
-    }
-    #aboutus-section {
-        padding: 0px !important;
-        padding-top: 3.5px !important;
-    }
-}
-
-@media screen and (max-width: 535px) {
-    iframe {
-        width: 340px;
-        height: 300px;
-    }
-    button#continue-btn {
-        margin-left: 24%;
+@media screen and (min-width: 1450px) {
+    .product-card {
+        max-width: 320px !important;
     }
 }
 
 @media screen and (min-width: 1500px) {
     #makePlace {
         padding-top: 65%;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .product-card {
+        max-width: 370px !important;
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    .product-card {
+        max-width: 430px !important;
     }
 }
 
