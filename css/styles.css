@@ -149,11 +149,11 @@ p#avatar-p {
 
 @media all and (max-width: 535px) {
     iframe {
-        width: 340px;
-        height: 300px;
+        width: 340px !important;
+        height: 300px !important;
     }
     button#continue-btn {
-        margin-left: 24%;
+        margin-left: 24% !important;
     }
 }
 
