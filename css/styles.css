@@ -1,53 +1,69 @@
 /*HTML*/
-html{
+
+html {
     scroll-behavior: smooth;
 }
 
+
 /*BODY*/
-body{
+
+body {
     background: #212529 !important;
 }
 
+
 /*div NavbarNav*/
-div#NavbarNav.collapse.navbar-collapse{
+
+div#NavbarNav.collapse.navbar-collapse {
     justify-content: flex-end;
 }
 
+
 /*Logo-img*/
+
 #logo {
     height: 100px;
 }
 
+
 /*navbar*/
-.nav-item.active{
+
+.nav-item.active {
     font-size: 20px;
     padding-right: 5px;
 }
 
-ul.navbar-nav{
+ul.navbar-nav {
     padding-left: 12%;
 }
 
+
 /*Search Form*/
-input.form-control.mr-sm-2{
+
+input.form-control.mr-sm-2 {
     width: 30%;
 }
+
+
 /*navbar ends here*/
 
+
 /*main*/
-main{
+
+main {
     position: relative;
     top: 100px;
 }
 
-
-h1{
+h1 {
     color: #ced4da !important;
     margin-top: 80px !important;
     text-align: center;
 }
 
+
 /*home and title*/
+
 #home {
     background-image: url(../img/titelbild2.jpg);
     opacity: 1;
@@ -109,76 +125,77 @@ p#avatar-p {
     padding: 10px;
 }
 
-#makePlace{
+#makePlace {
     padding-top: 55%;
 }
 
 @media screen and (min-width: 1200px) {
-    #makePlace{
+    #makePlace {
         padding-top: 75%;
     }
 }
 
 @media screen and (max-width: 1328px) {
-    iframe{
+    iframe {
         width: 1140px;
         height: 500px;
     }
 }
 
 @media screen and (max-width: 1128px) {
-    iframe{
+    iframe {
         width: 840px;
         height: 500px;
     }
 }
 
 @media screen and (max-width: 835px) {
-    iframe{
+    iframe {
         width: 540px;
         height: 400px;
     }
-
-    button#continue-btn{
+    button#continue-btn {
         margin-left: 34%;
     }
 }
 
 @media screen and (max-width: 635px) {
-    button#continue-btn{
+    button#continue-btn {
         margin-left: 28%;
     }
-
-    #aboutus-section{
+    #aboutus-section {
         padding: 0px !important;
         padding-top: 3.5px !important;
     }
 }
 
 @media screen and (max-width: 535px) {
-    iframe{
+    iframe {
         width: 340px;
         height: 300px;
     }
-    
-    button#continue-btn{
+    button#continue-btn {
         margin-left: 24%;
     }
 }
 
 @media screen and (min-width: 1500px) {
-    #makePlace{
+    #makePlace {
         padding-top: 65%;
     }
 }
 
-#home_button{
+#home_button {
     margin-top: 15%;
 }
+
+
 /*home ends here*/
 
+
 /*Card-Container starts here*/
-.card_container{
+
+.card_container {
     margin-bottom: 50px;
     margin-top: 100px;
     display: flex;
@@ -191,161 +208,208 @@ p#avatar-p {
     width: 400px;
     height: 400px;
     perspective: 1000px;
-  }
+}
 
-  .flip-card p{
-    color:#aaa6a6;
+.flip-card p {
+    color: #aaa6a6;
     text-align: center;
-  }
-  
-  .card_container .flip-card-inner {
+}
+
+.card_container .flip-card-inner {
     position: relative;
     width: 100%;
     height: 100%;
     text-align: center;
     transition: transform 0.6s;
     transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  }
-  
-  .card_container .flip-card:hover .flip-card-inner {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card_container .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
-  }
-  
-  .card_container .flip-card-front, .flip-card-back {
+}
+
+.card_container .flip-card-front,
+.flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-  }
-  
-  .card_container .flip-card-front {
+}
+
+.card_container .flip-card-front {
     background-color: #ced4da;
     color: black;
-  }
-  
-  .card_container .flip-card-back {
+}
+
+.card_container .flip-card-back {
     background-color: #212529;
     color: white;
     transform: rotateY(180deg);
-  }
+}
+
+
 /*Card-Container ends here*/
 
+
 /*About the company*/
-.container h1{
+
+.container h1 {
     margin-bottom: 2.5rem;
 }
-.container p{
+
+.container p {
     color: #aaa6a6;
     margin: auto;
     text-align: center;
     font-size: larger;
 }
 
+
 /*Footer section starts here*/
-footer{
-    color:#aaa6a6;
+
+footer {
+    color: #aaa6a6;
     position: relative;
-    top:7rem;
+    top: 7rem;
     margin: 0px 50px 0px 50px;
 }
 
-#footer-list{
+#footer-list {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    text-align: center;
 }
 
-#footer-list li{
+#footer-list li {
     list-style-type: none;
 }
 
-#footer-list a{
+#footer-list a {
     text-decoration: none;
-    color:#aaa6a6;
+    color: #aaa6a6;
 }
 
-#footer-list h6{
+#footer-list h6 {
     font-weight: bold;
 }
 
-
-#socialMedia img{
+#socialMedia img {
     width: 30px;
     padding: 5px;
     padding-bottom: 10px;
 }
 
-#copyright img{
+#copyright img {
     width: 30px;
     padding: 5px;
     padding-bottom: 10px;
 }
 
-#copyright p{
+#copyright p {
     padding-bottom: 20px;
 }
+
+
 /*Footer section ends here*/
 
+
 /*Product section starts here*/
+
 .product-card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     background-color: #fff;
-    max-width: 300px;
-    margin: auto;
+    max-width: 310px;
+    margin: 0 auto auto auto;
     margin-bottom: 50px;
     text-align: center;
     font-family: arial;
     border-radius: 5px;
-  }
+    display: none;
+}
 
-  .product-card p{
+.card_container .product-card:nth-child(1),
+.card_container .product-card:nth-child(2),
+.card_container .product-card:nth-child(3),
+.card_container .product-card:nth-child(4),
+.card_container .product-card:nth-child(5),
+.card_container .product-card:nth-child(6),
+.card_container .product-card:nth-child(7),
+.card_container .product-card:nth-child(8) {
+    display: inline-block;
+}
+
+.product-card p {
     color: black;
-  }
+}
 
-  .product-card h2{
+.product-card h2 {
     font-size: 120%;
     font-weight: bold;
     color: black;
-  }
-  
-  .price {
+}
+
+.price {
     color: grey;
     font-size: 22px;
-  }
+}
+
+#load-more {
+    display: inline-block;
+    padding: 10px 30px;
+    border: 1px solid #aaa6a6;
+    color: #aaa6a6;
+    background-color: transparent;
+    border-radius: 2.5rem;
+    cursor: pointer;
+}
+
+#load-more:hover {
+    background-color: #fff;
+    color: #212529;
+}
+
+
 /*Product section ends here*/
 
+
 /*Contact section starts here*/
-#contact-section{
+
+#contact-section {
     padding: 3.5rem;
 }
 
-#contact-section p{
-    color:#aaa6a6;
+#contact-section p {
+    color: #aaa6a6;
 }
 
-#contact-section a{
+#contact-section a {
     text-decoration: none;
     color: #aaa6a6;
 }
+
+
 /*Contact section ends here*/
 
+
 /*About Us section starts here*/
-#aboutus-section{
+
+#aboutus-section {
     padding: 3.5rem;
 }
 
-#aboutus-section p{
-    color:#aaa6a6;
+#aboutus-section p {
+    color: #aaa6a6;
     text-align: left;
     font-size: larger;
     margin-left: 50px;
     margin-right: 50px;
 }
 
-#aboutus-section h3{
-    color:#aaa6a6;
+#aboutus-section h3 {
+    color: #aaa6a6;
     text-align: center;
     font-weight: bolder;
 }
@@ -380,4 +444,6 @@ footer{
     margin-right: auto;
     margin-left: auto;
 }
+
+
 /*About us section ends here*/
