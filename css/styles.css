@@ -45,6 +45,24 @@ input.form-control.mr-sm-2 {
 }
 
 
+/*Hamburger*/
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #aaa6a6;
+}
+
+
 /*navbar ends here*/
 
 
@@ -149,7 +167,40 @@ p#avatar-p {
     }
 }
 
-@media screen and (max-width: 835px) {
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .navbar-nav {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #212529;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .nav-item {
+        margin: 16px 0;
+    }
+    .nav-item:hover {
+        background-color: #aaa6a6;
+    }
+    .navbar-nav.active {
+        left: 0;
+    }
+    
     iframe {
         width: 540px;
         height: 400px;
@@ -232,6 +283,10 @@ p#avatar-p {
     width: 400px;
     height: 400px;
     perspective: 1000px;
+}
+
+.flip-card {
+    margin-bottom: 2.5rem;
 }
 
 .flip-card p {
