@@ -35,27 +35,32 @@
                 <a href="index.html"><img id="logo" src="img\logo.png" alt="Logo Stand"></a>
 
                 <!--Button burger menu-->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
-                      </button>
+                      </button>-->
 
                 <div class="collapse navbar-collapse" id="NavbarNav">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" name="search" aria-label="Search" onkeyup="search()">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#products">Produkte</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#contact">Kontakt</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#aboutUs">Über uns!</a>
-                        </li>
-                    </ul>
+                </div>
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#products">Produkte</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#contact">Kontakt</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#aboutUs">Über uns!</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
                 </div>
             </div>
         </nav>
@@ -272,14 +277,14 @@
             <div class="product-card">
                 <img src="img\spieluhrVogel.jpg" alt="Souvenir" style="width:37%">
                 <h2>Spieluhr mit Vogel</h2>
-                <p class="price">€ 69,-</p>
+                <p class="price">€ 59,-</p>
                 <p>Spieluhr mit drehendem Vogel und Swarovski Kristallen.</p>
             </div>
 
             <div class="product-card">
                 <img src="img\swarovskiEiMini.jpg" alt="Souvenir" style="width:37%">
                 <h2>Fabergé-Ei in Mini</h2>
-                <p class="price">€ 49,-</p>
+                <p class="price">€ 29,-</p>
                 <p>Echtes Fabergé-Ei mit Swarovski Kristallen und Ständer. Verfügbar in grün, blau und weiß.</p>
             </div>
 
@@ -347,6 +352,21 @@
                     }
                 }
                 //Load More Button ends here!
+
+            //Burger Menu starts here:
+            const hamburger = document.querySelector(".hamburger");
+            const navMenu = document.querySelector(".navbar-nav");
+
+            hamburger.addEventListener("click", () => {
+                hamburger.classList.toggle("active");
+                navMenu.classList.toggle("active");
+            })
+
+            document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+                    hamburger.classList.remove("active");
+                    navMenu.classList.remove("active");
+                }))
+                //Burger Menu ends here
         </script>
 
         <!--Contact-->
