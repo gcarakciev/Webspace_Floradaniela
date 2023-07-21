@@ -212,9 +212,6 @@ p#avatar-p {
     }
 }
 
-
-/*768px was before 835*/
-
 @media only screen and (max-width: 768px) {
     .hamburger {
         display: block;
@@ -233,7 +230,7 @@ p#avatar-p {
         left: -100%;
         top: 70px;
         gap: 0;
-        flex-direction: column;
+        flex-direction: column !important;
         background-color: #212529;
         width: 100%;
         text-align: center;
