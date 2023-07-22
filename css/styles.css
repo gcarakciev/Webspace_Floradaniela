@@ -540,3 +540,15 @@ footer {
 
 
 /*About us section ends here*/
+
+/*Impressum starts here:*/
+
+#impressum p {
+    text-align: left;
+}
+
+#impressum h1 {
+    text-align: left;
+}
+
+/*Impressum ends here*/
