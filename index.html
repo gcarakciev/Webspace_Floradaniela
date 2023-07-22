@@ -367,7 +367,43 @@
                     hamburger.classList.remove("active");
                     navMenu.classList.remove("active");
                 }))
-                //Burger Menu ends here
+            //Burger Menu ends here
+            /*Search starts here*/
+            function search() {
+                let filter = document.getElementById('find').value.toUpperCase();
+                let item = document.querySelectorAll('.product-card');
+
+                for (let i = 0; i < item.length; i++) {
+                    let a = item[i].getElementsByTagName('h2')[0];
+                    let value = a.innerHTML || a.innerText || a.textContent;
+
+                    if (filter !== '') {
+                        // Wenn nach etwas gesucht wird, alle Karten anzeigen, die dem Suchbegriff entsprechen
+                        if (value.toUpperCase().indexOf(filter) > -1) {
+                            item[i].style.display = 'inline-block';
+                        } else {
+                            item[i].style.display = 'none';
+                        }
+                    } else {
+                        // Ansonsten nur die ersten zwei Zeilen der Karten anzeigen
+                        if (i < 8) {
+                            item[i].style.display = 'inline-block';
+                        } else {
+                            item[i].style.display = 'none';
+                        }
+                    }
+                }
+            }
+
+            // Eventlistener, um die Suchfunktion auszuführen, wenn das DOM vollständig geladen ist
+            document.addEventListener("DOMContentLoaded", function() {
+                // Input-Element abrufen
+                let input = document.querySelector("input[name='search']");
+
+                // Eventlistener hinzufügen, um die Suchfunktion auf keyup-Ereignisse auszuführen
+                input.addEventListener("keyup", search);
+            });
+            /*Search ends here*/
         </script>
 
         <!--Contact-->
