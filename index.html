@@ -40,8 +40,7 @@
                       </button>-->
 
                 <div class="collapse navbar-collapse" id="NavbarNav">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" name="search" id="find" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="search()">Search</button>
+                    <input class="form-control mr-sm-2" type="search" placeholder="Suchen..." name="search" id="find" aria-label="Search" onclick="search()">
                 </div>
                 <ul class="navbar-nav">
                     <li class="nav-item active">
@@ -55,6 +54,9 @@
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="#aboutUs">Über uns!</a>
+                    </li>
+                    <li class ="nav-item active">
+                        <a class="nav-link" href="index_en.html">EN</a>
                     </li>
                 </ul>
                 <div class="hamburger">
@@ -107,7 +109,7 @@
             <div class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src="img\strausss.png" alt="Gewuerzstrauss" style="width:100%;">
+                        <img src="img\strauss_Card.png" alt="Gewuerzstrauss" style="width:80%;">
                     </div>
                     <div class="flip-card-back">
                         <h1>Echter Gewürzstrauß</h1>
@@ -132,171 +134,339 @@
 
         <div class="card_container">
             <div class="product-card">
-                <img src="img\türkranz.png" alt="Tuerkranz" style="width:100%">
+                <img src="img\türkranz.png" id="productImage" alt="Tuerkranz" style="width:100%">
                 <h2>Weihnachtlicher Türkranz</h2>
                 <p class="price">€ 39,90</p>
                 <p>Weihnachtlicher Türkranz mit Weihnachtsmann und Christbaumkugeln.</p>
             </div>
 
             <div class="product-card">
-                <img src="img\kerzengesteck.jpg" alt="Gesteck" style="width:100%">
+                <img src="img\kerzengesteck.jpg" id="productImage" alt="Gesteck" style="width:100%">
                 <h2>Weihnachtliches Gesteck</h2>
                 <p class="price">€ 29,90</p>
                 <p>Weihnachtliches Gesteck mit weißer Kerze, Masche und Tannen.</p>
             </div>
 
             <div class="product-card">
-                <img src="img\Engelgesteck.jpg" alt="Gesteck" style="width:100%">
+                <img src="img\Engelgesteck.jpg" id="productImage" alt="Gesteck" style="width:100%">
                 <h2>Weihnachtliches Gesteck</h2>
                 <p class="price">€ 34,90</p>
                 <p>Weihnachtliches Gesteck mit Engelfigur, Masche und Tannen.</p>
             </div>
 
             <div class="product-card">
-                <img src="img\Rehkranz.jpg" alt="Tuerkranz" style="width:100%">
+                <img src="img\Rehkranz.jpg" id="productImage" alt="Tuerkranz" style="width:100%">
                 <h2>Weihnachtlicher Türkranz</h2>
                 <p class="price">€ 39,90</p>
                 <p>Weihnachtlicher Türkranz mit Reh, Masche, Christbaumkugeln und Tannen.</p>
             </div>
 
             <div class="product-card">
-                <img src="img\Rehstern.jpg" alt="Tuerkranz" style="width:100%">
+                <img src="img\Rehstern.jpg" id="productImage" alt="Tuerkranz" style="width:100%">
                 <h2>Weihnachtlicher Türkranz</h2>
                 <p class="price">€ 33,90</p>
-                <p>Weihnachtlicher Türkranz in Herzform mit Reh, Masche, Christbaumkugeln und Tannen.</p>
+                <p>Weihnachtlicher Türkranz in Sternform mit Reh, Masche, Christbaumkugeln und Tannen.</p>
             </div>
 
             <div class="product-card">
-                <img src="img\straussblau.jpg" alt="Gewuerzstrauss" style="width:100%">
-                <h2>Gewürzstrauß in Blau</h2>
-                <p class="price">€ 18,90</p>
-                <p>Echter Gewürzstrauß in groß, handgebunden mit Erika, Zimt, Bucheckerl, Nelken, Kürbiskernen und vieles mehr.</p>
-            </div>
-
-            <div class="product-card">
-                <img src="img\straussgruen.jpg" alt="Gewuerzstrauss" style="width:100%">
-                <h2>Gewürzstrauß in Grün</h2>
-                <p class="price">€ 10,90</p>
-                <p>Echter Gewürzstrauß in klein, handgebunden mit Erika, Zimt, Bucheckerl, Nelken, Kürbiskernen und vieles mehr.</p>
-            </div>
-
-            <div class="product-card">
-                <img src="img\straussrosa.jpg" alt="Gewuerzstrauss" style="width:100%">
-                <h2>Gewürzstrauß in Rosa</h2>
+                <img src="img\G1\straussrosa.jpg" id="productImage1" alt="Gewuerzstrauss" style="width:100%">
+                <h2>Gewürzstrauß G1 mini</h2>
+                <div class="Dots">
+                    <span class="redDot" onclick="changeProductImage(1, 'img/G1/straussrot.jpg')"></span>
+                    <span class="roseDot" onclick="changeProductImage(1, 'img/G1/straussrosa.jpg')"></span>
+                    <span class="purpleDot" onclick="changeProductImage(1, 'img/G1/strausspink.jpg')"></span>
+                    <span class="blueDot" onclick="changeProductImage(1, 'img/G1/straussblau.jpg')"></span>
+                    <span class="lightblueDot" onclick="changeProductImage(1, 'img/G1/strausshellblau.jpg')"></span>
+                    <span class="greenDot" onclick="changeProductImage(1, 'img/G1/straussgruen.jpg')"></span>
+                    <span class="whiteDot" onclick="changeProductImage(1, 'img/G1/straussweiss.jpg')"></span>
+                </div>
                 <p class="price">€ 5,90</p>
-                <p>Echter Gewürzstrauß in mini, handgebunden mit Erika, Zimt, Bucheckerl, Nelken, Kürbiskernen und vieles mehr.</p>
+                <p>Echter Gewürzstrauß, handgebunden mit Erika, Zimt, Bucheckerl, Nelken, Kürbiskernen und vieles mehr. Druchmesser: 6cm.</p>
             </div>
 
+            <div class="product-card">
+                <img src="img\G2\strausslila.jpg" id="productImage2" alt="Gewuerzstrauss" style="width:59%">
+                <h2>Gewürzstrauß G2 klein</h2>
+                <div class="Dots">
+                    <span class="redDot" onclick="changeProductImage(2, 'img/G2/straussrot.jpg')"></span>
+                    <span class="roseDot" onclick="changeProductImage(2, 'img/G2/straussrosa.jpg')"></span>
+                    <span class="purpleDot" onclick="changeProductImage(2, 'img/G2/strausslila.jpg')"></span>
+                    <span class="blueDot" onclick="changeProductImage(2, 'img/G2/straussblau.jpg')"></span>
+                    <span class="lightblueDot" onclick="changeProductImage(2, 'img/G2/strausshellblau.jpg')"></span>
+                    <span class="greenDot" onclick="changeProductImage(2, 'img/G2/straussgruen.jpg')"></span>
+                    <span class="yellowDot" onclick="changeProductImage(2, 'img/G2/straussgelb.jpg')"></span>
+                    <span class="whiteDot" onclick="changeProductImage(2, 'img/G2/straussweiss.jpg')"></span>
+                </div>
+                <p class="price">€ 10,90</p>
+                <p>Echter Gewürzstrauß, handgebunden mit Erika, Zimt, Bucheckerl, Nelken, Kürbiskernen und vieles mehr. Durchmesser: 8cm.</p>
+            </div>
+
+            <div class="product-card">
+                <img src="img\G3\straussrot.jpg" id="productImage3" alt="Gewuerzstrauss" style="width:52%">
+                <h2>Gewürzstrauß G3 klein</h2>
+                <div class="Dots">
+                    <span class="redDot" onclick="changeProductImage(3, 'img/G3/straussrot.jpg')"></span>
+                    <span class="roseDot" onclick="changeProductImage(3, 'img/G3/straussrosa.jpg')"></span>
+                    <span class="purpleDot" onclick="changeProductImage(3, 'img/G3/strausslila.jpg')"></span>
+                    <span class="blueDot" onclick="changeProductImage(3, 'img/G3/straussblau.jpg')"></span>
+                    <span class="lightblueDot" onclick="changeProductImage(3, 'img/G3/strausshellblau.jpg')"></span>
+                    <span class="greenDot" onclick="changeProductImage(3, 'img/G3/straussgruen.jpg')"></span>
+                    <span class="yellowDot" onclick="changeProductImage(3, 'img/G3/straussgelb.jpg')"></span>
+                    <span class="whiteDot" onclick="changeProductImage(3, 'img/G3/straussweiss.jpg')"></span>
+                </div>
+                <p class="price">€ 15,90</p>
+                <p>Echter Gewürzstrauß, handgebunden mit Erika, Zimt, Bucheckerl, Nelken, Kürbiskernen und vieles mehr. Durchmesser: 10cm.</p>
+            </div>
+
+            <div class="product-card">
+                <img src="img\G4\straussrot.jpg" id="productImage4" alt="Gewuerzstrauss" style="width:85%">
+                <h2>Gewürzstrauß G4 mittel</h2>
+                <div class="Dots">
+                    <span class="redDot" onclick="changeProductImage(4, 'img/G4/straussrot.jpg')"></span>
+                    <span class="roseDot" onclick="changeProductImage(4, 'img/G4/straussrosa.jpg')"></span>
+                    <span class="purpleDot" onclick="changeProductImage(4, 'img/G4/strausslila.jpg')"></span>
+                    <span class="blueDot" onclick="changeProductImage(4, 'img/G4/straussblau.jpg')"></span>
+                    <span class="lightblueDot" onclick="changeProductImage(4, 'img/G4/strausshellblau.jpg')"></span>
+                    <span class="greenDot" onclick="changeProductImage(4, 'img/G4/straussgruen.jpg')"></span>
+                    <span class="yellowDot" onclick="changeProductImage(4, 'img/G4/straussgelb.jpg')"></span>
+                    <span class="whiteDot" onclick="changeProductImage(4, 'img/G4/straussweiss.jpg')"></span>
+                </div>
+                <p class="price">€ 18,90</p>
+                <p>Echter Gewürzstrauß, handgebunden mit Erika, Zimt, Bucheckerl, Nelken, Kürbiskernen und vieles mehr. Druchmesser: 12cm Durchmesser.</p>
+            </div>
+
+            <div class="product-card">
+                <img src="img\G5\straussrot.jpg" id="productImage5" alt="Gewuerzstrauss" style="width:56%">
+                <h2>Gewürzstrauß G5 groß</h2>
+                <div class="Dots">
+                    <span class="redDot" onclick="changeProductImage(5, 'img/G5/straussrot.jpg')"></span>
+                    <span class="roseDot" onclick="changeProductImage(5, 'img/G5/straussrosa.jpg')"></span>
+                    <span class="purpleDot" onclick="changeProductImage(5, 'img/G5/strausslila.jpg')"></span>
+                    <span class="blueDot" onclick="changeProductImage(5, 'img/G5/straussblau.jpg')"></span>
+                    <span class="lightblueDot" onclick="changeProductImage(5, 'img/G5/strausshellblau.jpg')"></span>
+                    <span class="greenDot" onclick="changeProductImage(5, 'img/G5/straussgruen.jpg')"></span>
+                    <span class="yellowDot" onclick="changeProductImage(5, 'img/G5/straussgelb.jpg')"></span>
+                    <span class="whiteDot" onclick="changeProductImage(5, 'img/G5/straussweiss.jpg')"></span>
+                </div>
+                <p class="price">€ 27,90</p>
+                <p>Echter Gewürzstrauß Groß, handgebunden mit Anisstern, Zimt, Bucheckerl, Nelken und vieles mehr. Durchmesser: 14cm.</p>
+            </div>
 
             <!--Ab hier beginnen die neuen produktzeilen:-->
 
             <div class="product-card">
-                <img src="img\straussRotGross.jpg" alt="Gewuerzstrauss" style="width:50%">
-                <h2>Gewürzstrauß in Weinrot</h2>
+                <img src="img\G6\straussRotGross.jpg" id="productImage6" alt="Gewuerzstrauss" style="width:50%">
+                <h2>Gewürzstrauß G6 riesig</h2>
+                <div class="Dots">
+                    <span class="redDot" onclick="changeProductImage(6, 'img/G6/straussRotGross.jpg')"></span>
+                    <span class="roseDot" onclick="changeProductImage(6, 'img/G6/straussrosa.jpg')"></span>
+                    <span class="purpleDot" onclick="changeProductImage(6, 'img/G6/strausslila.jpg')"></span>
+                    <span class="blueDot" onclick="changeProductImage(6, 'img/G6/straussblau.jpg')"></span>
+                    <span class="lightblueDot" onclick="changeProductImage(6, 'img/G6/strausshellblau.jpg')"></span>
+                    <span class="greenDot" onclick="changeProductImage(6, 'img/G6/straussgruen.jpg')"></span>
+                </div>
                 <p class="price">€ 99,-</p>
-                <p>Echter Gewürzstrauß groß, handgebunden mit Zimt, Bucheckerl, Nelken, Anissternen und vieles mehr.</p>
+                <p>Echter Gewürzstrauß, handgebunden mit Zimt, Bucheckerl, Nelken, Anissternen und vieles mehr. Durchmesser: 16cm.</p>
             </div>
 
             <div class="product-card">
-                <img src="img\straussgruen15.jpg" alt="Gewuerzstrauss" style="width:56%">
-                <h2>Gewürzstrauß in Grün</h2>
-                <p class="price">€ 27,90</p>
-                <p>Echter Gewürzstrauß Groß, handgebunden mit Anisstern, Zimt, Bucheckerl, Nelken und vieles mehr.</p>
-            </div>
-
-            <div class="product-card">
-                <img src="img\gewHufeisen.jpg" alt="Hufeisen" style="width:56%">
-                <h2>Gewürzhufeisen in Blau</h2>
+                <img src="img\gewHufeisen\gewHufeisen.jpg" id="productImage7" alt="Hufeisen" style="width:67%">
+                <h2>Gewürzhufeisen</h2>
+                <div class="Dots">
+                    <span class="redDot" onclick="changeProductImage(7, 'img/gewHufeisen/gewHufeisen.jpg')"></span>
+                    <span class="roseDot" onclick="changeProductImage(7, 'img/gewHufeisen/gewHufeisenrosa.jpg')"></span>
+                    <span class="purpleDot" onclick="changeProductImage(7, 'img/gewHufeisen/gewHufeisenlila.jpg')"></span>
+                    <span class="blueDot" onclick="changeProductImage(7, 'img/gewHufeisen/gewHufeisenblau.jpg')"></span>
+                    <span class="lightblueDot" onclick="changeProductImage(7, 'img/gewHufeisen/gewHufeisenhellblau.jpg')"></span>
+                    <span class="greenDot" onclick="changeProductImage(7, 'img/gewHufeisen/gewHufeisengruen.jpg')"></span>
+                    <span class="yellowDot" onclick="changeProductImage(7, 'img/gewHufeisen/gewHufeisengelb.jpg')"></span>
+                    <span class="whiteDot" onclick="changeProductImage(7, 'img/gewHufeisen/gewHufeisenweiss.jpg')"></span>
+                </div>
                 <p class="price">€ 15,90</p>
                 <p>Echtes Gewürzhufeisen, handgebunden mit Erika, Zimt, Bucheckerl, Nelken, Kürbiskernen und vieles mehr.</p>
             </div>
 
             <div class="product-card">
-                <img src="img\gewKranzKlein.jpg" alt="Gewuerzkranz" style="width:43%">
-                <h2>Nelkenkranz in Rot</h2>
+                <img src="img\gewKranzKlein\gewKranzKlein.jpg" id="productImage8" alt="Gewuerzkranz" style="width:59%">
+                <h2>Nelkenkranz</h2>
+                <div class="Dots">
+                    <span class="redDot" onclick="changeProductImage(8, 'img/gewKranzKlein/gewKranzKlein.jpg')"></span>
+                    <span class="roseDot" onclick="changeProductImage(8, 'img/gewKranzKlein/gewKranzKleinrosa.jpg')"></span>
+                    <span class="purpleDot" onclick="changeProductImage(8, 'img/gewKranzKlein/gewKranzKleinlila.jpg')"></span>
+                    <span class="blueDot" onclick="changeProductImage(8, 'img/gewKranzKlein/gewKranzKleinblau.jpg')"></span>
+                    <span class="lightblueDot" onclick="changeProductImage(8, 'img/gewKranzKlein/gewKranzKleinhellblau.jpg')"></span>
+                    <span class="greenDot" onclick="changeProductImage(8, 'img/gewKranzKlein/gewKranzKleingruen.jpg')"></span>
+                    <span class="whiteDot" onclick="changeProductImage(8, 'img/gewKranzKlein/gewKranzKleinweiss.jpg')"></span>
+                </div>
                 <p class="price">€ 12,90</p>
-                <p>Echter Nelkenkranz in klein, handgebunden mit Nelken. Verfügbar in allen Farbvariationen.</p>
+                <p>Echter Nelkenkranz in klein, handgebunden mit Nelken. Verfügbar in allen Farbvariationen. Außendurchmesser: 8cm.</p>
             </div>
 
             <div class="product-card">
-                <img src="img\gewKranzMittel.jpg" alt="Gewuerzkranz" style="width:89%">
-                <h2>Gewürzkranz in Rot</h2>
+                <img src="img\gewKranzMittelHerz\gewKranzHerzrot.jpg" id="productImage12" alt="Gewuerzgebinde" style="width:48%;">
+                <h2>Nelkenkranz in Herzform</h2>
+                <div class="Dots">
+                    <span class="redDot" onclick="changeProductImage(12, 'img/gewKranzMittelHerz/gewKranzHerzrot.jpg')"></span>
+                    <span class="roseDot" onclick="changeProductImage(12, 'img/gewKranzMittelHerz/gewKranzHerzrosa.jpg')"></span>
+                    <span class="purpleDot" onclick="changeProductImage(12, 'img/gewKranzMittelHerz/gewKranzHerzlila.jpg')"></span>
+                    <span class="blueDot" onclick="changeProductImage(12, 'img/gewKranzMittelHerz/gewKranzHerzblau.jpg')"></span>
+                    <span class="lightblueDot" onclick="changeProductImage(12, 'img/gewKranzMittelHerz/gewKranzHerzhellblau.jpg')"></span>
+                    <span class="greenDot" onclick="changeProductImage(12, 'img/gewKranzMittelHerz/gewKranzHerzgruen.jpg')"></span>
+                    <span class="yellowDot" onclick="changeProductImage(12, 'img/gewKranzMittelHerz/gewKranzHerzgelb.jpg')"></span>
+                    <span class="whiteDot" onclick="changeProductImage(12, 'img/gewKranzMittelHerz/gewKranzHerzweiss.jpg')"></span>
+                </div>
+                <p class="price">€ 15,90</p>
+                <p>Echter Nelkenkranz in klein, handgebunden mit Nelken. Verfügbar in allen Farbvariationen. Außendurchmesser: 10cm.</p>
+            </div>
+
+            <div class="product-card">
+                <img src="img\gewKranzMittel\gewKranzMittel.jpg" id="productImage9" alt="Gewuerzkranz" style="width:89%">
+                <h2>Gewürzkranz</h2>
+                <div class="Dots">
+                    <span class="redDot" onclick="changeProductImage(9, 'img/gewKranzMittel/gewKranzMittel.jpg')"></span>
+                    <span class="roseDot" onclick="changeProductImage(9, 'img/gewKranzMittel/gewKranzMittelrosa.jpg')"></span>
+                    <span class="purpleDot" onclick="changeProductImage(9, 'img/gewKranzMittel/gewKranzMittellila.jpg')"></span>
+                    <span class="blueDot" onclick="changeProductImage(9, 'img/gewKranzMittel/gewKranzMittelblau.jpg')"></span>
+                    <span class="lightblueDot" onclick="changeProductImage(9, 'img/gewKranzMittel/gewKranzMittelhellblau.jpg')"></span>
+                    <span class="greenDot" onclick="changeProductImage(9, 'img/gewKranzMittel/gewKranzMittelgruen.jpg')"></span>
+                    <span class="yellowDot" onclick="changeProductImage(9, 'img/gewKranzMittel/gewKranzMittelgelb.jpg')"></span>
+                    <span class="whiteDot" onclick="changeProductImage(9, 'img/gewKranzMittel/gewKranzMittelweiss.jpg')"></span>
+                </div>
                 <p class="price">€ 27,50</p>
-                <p>Echter Gewürzkranz Mittel. Handgebunden mit Nelken, Zimt, Anisstern und vieles mehr. Verfügbar in allen Farben.</p>
+                <p>Echter Gewürzkranz Mittel. Handgebunden mit Nelken, Zimt, Anisstern und vieles mehr. Verfügbar in allen Farben. Außendurchmesser: 16cm.</p>
             </div>
 
             <div class="product-card">
-                <img src="img\gewHerz.jpg" alt="Gewuerzherz" style="width:57%">
+                <img src="img\gewHerz\gewHerz.jpg" id="productImage10" alt="Gewuerzherz" style="width:57%">
                 <h2>Gewürzherz in Rot</h2>
+                <div class="Dots">
+                    <span class="redDot" onclick="changeProductImage(10, 'img/gewHerz/gewHerz.jpg')"></span>
+                    <span class="roseDot" onclick="changeProductImage(10, 'img/gewHerz/gewHerzrosa.jpg')"></span>
+                    <span class="purpleDot" onclick="changeProductImage(10, 'img/gewHerz/gewHerzlila.jpg')"></span>
+                    <span class="blueDot" onclick="changeProductImage(10, 'img/gewHerz/gewHerzblau.jpg')"></span>
+                    <span class="lightblueDot" onclick="changeProductImage(10, 'img/gewHerz/gewHerzhellblau.jpg')"></span>
+                    <span class="greenDot" onclick="changeProductImage(10, 'img/gewHerz/gewHerzgruen.jpg')"></span>
+                    <span class="yellowDot" onclick="changeProductImage(10, 'img/gewHerz/gewHerzgelb.jpg')"></span>
+                    <span class="whiteDot" onclick="changeProductImage(10, 'img/gewHerz/gewHerzweiss.jpg')"></span>
+                </div>
                 <p class="price">€ 17,90</p>
                 <p>Echtes Gewürzherz aus Holz. Handgebunden mit Erika, Zimt, Bucheckerl, Nelken, Kürbiskernen und vieles mehr.</p>
             </div>
 
             <div class="product-card">
-                <img src="img\gewGebinde.jpg" alt="Gewuerzgebinde" style="width:30%; transform: rotate(90deg);">
-                <h2>Gewürzgebinde in Blau</h2>
+                <img src="img\gewGebinde\gewGebinderot.jpg" id="productImage11" alt="Gewuerzgebinde" style="width:23%;">
+                <h2>Gewürzgebinde</h2>
+                <div class="Dots">
+                    <span class="redDot" onclick="changeProductImage(11, 'img/gewGebinde/gewGebinderot.jpg')"></span>
+                    <span class="roseDot" onclick="changeProductImage(11, 'img/gewGebinde/gewGebinderosa.jpg')"></span>
+                    <span class="purpleDot" onclick="changeProductImage(11, 'img/gewGebinde/gewGebindelila.jpg')"></span>
+                    <span class="blueDot" onclick="changeProductImage(11, 'img/gewGebinde/gewGebinde.jpg')"></span>
+                    <span class="greenDot" onclick="changeProductImage(11, 'img/gewGebinde/gewGebindegruen.jpg')"></span>
+                </div>
                 <p class="price">€ 39,90</p>
-                <p>Echtes Gewürzgebinde in groß, handgebunden mit Zimt, Bucheckerl, Nelken, Sternanis und vieles mehr.</p>
+                <p>Echtes Gewürzgebinde in groß, handgebunden mit Zimt, Bucheckerl, Nelken, Sternanis und vieles mehr. Maße (H x B): 25cm x 12cm.</p>
             </div>
 
             <div class="product-card">
-                <img src="img\gewLöffel.jpg" alt="Gewuerzgebinde" style="width:21%; transform: rotate(90deg);">
-                <h2>Gewürzlöffel in Groß</h2>
-                <p class="price">€ 12,90</p>
-                <p>Echter Gewürzlöffel aus Holz in groß, handgebunden mit Erika, Zimt, Bucheckerl, Nelken, Kürbiskernen und vieles mehr.</p>
+                <img src="img\gewKalenderGross\gewKalenderGroßrot.jpg" id="productImage13" alt="Gewuerzgebinde" style="width: 30%">
+                <h2>Gewürzkalender in Groß</h2>
+                <div class="Dots">
+                    <span class="redDot" onclick="changeProductImage(13, 'img/gewKalenderGross/gewKalenderGroßrot.jpg')"></span>
+                    <span class="roseDot" onclick="changeProductImage(13, 'img/gewKalenderGross/gewKalenderGroßrosa.jpg')"></span>
+                    <span class="purpleDot" onclick="changeProductImage(13, 'img/gewKalenderGross/gewKalenderGroßlila.jpg')"></span>
+                    <span class="blueDot" onclick="changeProductImage(13, 'img/gewKalenderGross/gewKalenderGroßblau.jpg')"></span>
+                    <span class="lightblueDot" onclick="changeProductImage(13, 'img/gewKalenderGross/gewKalenderGroßhellblau.jpg')"></span>
+                    <span class="greenDot" onclick="changeProductImage(13, 'img/gewKalenderGross/gewKalenderGroß.jpg')"></span>
+                    <span class="yellowDot" onclick="changeProductImage(13, 'img/gewKalenderGross/gewKalenderGroßgelb.jpg')"></span>
+                    <span class="whiteDot" onclick="changeProductImage(13, 'img/gewKalenderGross/gewKalenderGroßweiss.jpg')"></span>
+                </div>
+                <p class="price">€ 18,90</p>
+                <p>Echter Gewürzkalender in groß, handgebunden mit Erika, Zimt, Bucheckerl, Nelken, Kürbiskernen und vieles mehr. Höhe: 20cm.</p>
             </div>
 
             <div class="product-card">
-                <img src="img\gewKalender.jpg" alt="Gewuerzgebinde" style="width:35%">
-                <h2>Gewürzkalender in Mini</h2>
+                <img src="img\gewKalenderMini\gewKalender.jpg" id="productImage14" alt="Gewuerzgebinde" style="width:35%">
+                <h2>Gewürzkalender in Klein</h2>
+                <div class="Dots">
+                    <span class="redDot" onclick="changeProductImage(14, 'img/gewKalenderMini/gewKalender.jpg')"></span>
+                    <span class="roseDot" onclick="changeProductImage(14, 'img/gewKalenderMini/gewKalenderrosa.jpg')"></span>
+                    <span class="purpleDot" onclick="changeProductImage(14, 'img/gewKalenderMini/gewKalenderlila.jpg')"></span>
+                    <span class="blueDot" onclick="changeProductImage(14, 'img/gewKalenderMini/gewKalenderblau.jpg')"></span>
+                    <span class="lightblueDot" onclick="changeProductImage(14, 'img/gewKalenderMini/gewKalenderhellblau.jpg')"></span>
+                    <span class="greenDot" onclick="changeProductImage(14, 'img/gewKalenderMini/gewKalendergruen.jpg')"></span>
+                </div>
                 <p class="price">€ 14,90</p>
-                <p>Echter Gewürzkalender in mini, handgebunden mit Erika, Zimt, Bucheckerl, Nelken, Kürbiskernen und vieles mehr.</p>
+                <p>Echter Gewürzkalender in Klein, handgebunden mit Erika, Zimt, Bucheckerl, Nelken, Kürbiskernen und vieles mehr. Höhe: 12cm.</p>
             </div>
 
             <div class="product-card">
-                <img src="img\pianoGold.jpg" alt="Souvenir" style="width:49%">
+                <img src="img\gewGebindeGlocke\gewGebindeGlockerot.jpg" id="productImage15" alt="Gewuerzgebinde" style="width:15%">
+                <h2>Gewürzgebinde mit Messingglocke</h2>
+                <div class="Dots">
+                    <span class="redDot" onclick="changeProductImage(15, 'img/gewGebindeGlocke/gewGebindeGlockerot.jpg')"></span>
+                    <span class="roseDot" onclick="changeProductImage(15, 'img/gewGebindeGlocke/gewGebindeGlocke.jpg')"></span>
+                    <span class="purpleDot" onclick="changeProductImage(15, 'img/gewGebindeGlocke/gewGebindeGlockelila.jpg')"></span>
+                    <span class="blueDot" onclick="changeProductImage(15, 'img/gewGebindeGlocke/gewGebindeGlockeblau.jpg')"></span>
+                    <span class="lightblueDot" onclick="changeProductImage(15, 'img/gewGebindeGlocke/gewGebindeGlockehellblau.jpg')"></span>
+                    <span class="greenDot" onclick="changeProductImage(15, 'img/gewGebindeGlocke/gewGebindeGlockegruen.jpg')"></span>
+                    <span class="yellowDot" onclick="changeProductImage(15, 'img/gewGebindeGlocke/gewGebindeGlockegelb.jpg')"></span>
+                    <span class="whiteDot" onclick="changeProductImage(15, 'img/gewGebindeGlocke/gewGebindeGlockeweiss.jpg')"></span>
+                </div>
+                <p class="price">€ 24,90</p>
+                <p>Echtes Gewürzgebinde mit Messingglocke, handgebunden mit Erika, Zimt, Bucheckerl, Nelken, Kürbiskernen und vieles mehr. Höhe: 20cm.</p>
+            </div>
+
+            <div class="product-card">
+                <img src="img\pianoGold.jpg" id="productImage1" alt="Souvenir" style="width:49%">
                 <h2>Spieluhr Piano vergoldet</h2>
                 <p class="price">€ 39,90</p>
                 <p>vergoldetes Piano als Spieluhr mit kleiner Nachtmusik von W.A.Mozart und Uhr.</p>
             </div>
 
             <div class="product-card">
-                <img src="img\pianoSchwarz.jpg" alt="Souvenir" style="width:60%">
+                <img src="img\pianoSchwarz.jpg" id="productImage2" alt="Souvenir" style="width:60%">
                 <h2>Spieluhr Piano in Schwarz</h2>
                 <p class="price">€ 24,90</p>
                 <p>Piano als Spieluhr mit kleiner Nachtmusik von W.A.Mozart. Verfügbar in schwarz und weiß.</p>
             </div>
 
             <div class="product-card">
-                <img src="img\glassPiano.jpg" alt="Souvenir" style="width:56%">
+                <img src="img\glassPiano.jpg" id="productImage3" alt="Souvenir" style="width:56%">
                 <h2>Spieluhr Piano in Glasform</h2>
                 <p class="price">€ 59,-</p>
                 <p>Piano als Spieluhr mit kleiner Nachtmusik von W.A.Mozart in Glasform.</p>
             </div>
 
             <div class="product-card">
-                <img src="img\spieluhrVogel.jpg" alt="Souvenir" style="width:37%">
+                <img src="img\spielVioline.jpg" id="productImage4" alt="Souvenir" style="width:22%">
+                <h2>Spieluhr Piano in Glasform</h2>
+                <p class="price">€ 45,-</p>
+                <p>Spieluhr in Violinenform mit kleiner Nachtmusik von W.A.Mozart.</p>
+            </div>
+
+            <div class="product-card">
+                <img src="img\spieluhrVogel.jpg" id="productImage5" alt="Souvenir" style="width:37%">
                 <h2>Spieluhr mit Vogel</h2>
                 <p class="price">€ 59,-</p>
                 <p>Spieluhr mit drehendem Vogel und Swarovski Kristallen.</p>
             </div>
 
             <div class="product-card">
-                <img src="img\swarovskiEiMini.jpg" alt="Souvenir" style="width:37%">
+                <img src="img\swarovskiEiMini.jpg" id="productImage6" alt="Souvenir" style="width:37%">
                 <h2>Fabergé-Ei in Mini</h2>
                 <p class="price">€ 29,-</p>
                 <p>Echtes Fabergé-Ei mit Swarovski Kristallen und Ständer. Verfügbar in grün, blau und weiß.</p>
             </div>
 
             <div class="product-card">
-                <img src="img\swarovskiEi.jpg" alt="Souvenir" style="width:37%">
+                <img src="img\swarovskiEi.jpg" id="productImage7" alt="Souvenir" style="width:37%">
                 <h2>Fabergé-Ei in Groß</h2>
                 <p class="price">€ 99,-</p>
                 <p>Echtes Fabergé-Ei mit Swarovski Kristallen und Musik.</p>
             </div>
 
             <div class="product-card">
-                <img src="img\festung.jpg" alt="Souvenir" style="width:70%">
+                <img src="img\festung.jpg" id="productImage" alt="Souvenir" style="width:70%">
                 <br><br><br>
                 <h2>Festung Hohensalzburg</h2>
                 <p class="price">€ 11,90</p>
@@ -304,28 +474,28 @@
             </div>
 
             <div class="product-card">
-                <img src="img\mozBueste.jpg" alt="Souvenir" style="width:38%">
+                <img src="img\mozBueste.jpg" id="productImage" alt="Souvenir" style="width:38%">
                 <h2>Mozart Büste in Weiß</h2>
                 <p class="price">€ 5,90 € 9,90 € 11,90</p>
                 <p>Weiße Mozartbüste als kleines Andenken an Salzburg. Verfügbar in 3 verschiedenen Größen: klein, mittel und groß.</p>
             </div>
 
             <div class="product-card">
-                <img src="img\schneekugel.jpg" alt="Souvenir" style="width:56%">
+                <img src="img\schneekugel.jpg" id="productImage" alt="Souvenir" style="width:56%">
                 <h2>Schneekugel "Salzburg" Mini</h2>
                 <p class="price">€ 10,90</p>
                 <p>Eine wundervolle Schneekugel in mini aus Salzburg als kleines Andenken.</p>
             </div>
 
             <div class="product-card">
-                <img src="img\schneekugel.jpg" alt="Souvenir" style="width:56%">
+                <img src="img\schneekugel.jpg" id="productImage" alt="Souvenir" style="width:56%">
                 <h2>Schneekugel "Salzburg"</h2>
                 <p class="price">€ 14,90</p>
                 <p>Eine wundervolle Schneekugel aus Salzburg als kleines Andenken.</p>
             </div>
 
             <div class="product-card">
-                <img src="img\schneekugelMoz.jpg" alt="Souvenir" style="width:44%">
+                <img src="img\schneekugelMoz.jpg" id="productImage" alt="Souvenir" style="width:44%">
                 <h2>Schneekugel mit Mozart</h2>
                 <p class="price">€ 13,90</p>
                 <p>Eine wundervolle Schneekugel mit Mozart als kleines Andenken.</p>
@@ -335,7 +505,7 @@
             <div id="load-more"> Mehr laden </div>
         </center>
 
-        <script>
+        <script>        
             //JavaScript Code for the Load More button
             let loadMoreBtn = document.querySelector('#load-more');
             let currentItem = 4;
@@ -346,7 +516,6 @@
                     for (var i = currentItem - 4; i < currentItem + 4; i++) {
                         boxes[i].style.display = 'inline-block';
                     }
-
 
                     if (currentItem + 4 >= boxes.length) {
                         loadMoreBtn.style.display = 'none';
@@ -404,6 +573,14 @@
                 input.addEventListener("keyup", search);
             });
             /*Search ends here*/
+
+            /*Change Product-Image function starts here*/
+            function changeProductImage(productNumber, newImage) {
+                let img = document.querySelector(`#productImage${productNumber}`);
+                img.setAttribute("src", newImage);
+            }
+
+            /*Change Product-Image function ends here*/
         </script>
 
         <!--Contact-->
@@ -436,7 +613,15 @@
         </div>
 
         <div class="end-section">
-            <div class="overlay"></div>
+            <div class="overlay">
+                <span id="CEO">
+                    <div class="team">
+                        <img src="img\ceo/ceo2.png" alt="CEO">
+                        <h2>Daniela Carakcieva</h2>
+                        <h4>Geschäftsführung</h4>
+                    </div>
+                </span>
+            </div>
             <!-- container -->
             <div class="end-container">
             </div>

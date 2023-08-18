@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Floradaniela is a renowned company in Salzburg specializing in souvenirs, Christmas decorations, and spice arrangements (spice bouquet, spice wreath). Explore our high-quality handmade products and immerse yourself in the beauty and charm of Salzburg. Be inspired by our variety and quality.">
+    <meta name="keywords" content="Spice bouquets, Spice wreaths, Floradaniela, Salzburg, Old Market, Old Town, Spice bouquet, Spice wreath, Souvenir, Christmas decoration, Christmas, Easter, Easter decoration, Mozart, Mozart city">
+    <meta name="author" content="Floradaniela - Daniela Carakcieva">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\styles.css">
+    <link rel="icon" type="image/png" href="img/favicon-32x32.png">
+    <script src="js\scripts.js"></script>
+    <title>Floradaniela</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+            <div class="container justify-content-between">
+                <a href="index.html"><img id="logo" src="img\logo.png" alt="Logo Stand"></a>
+                <div class="collapse navbar-collapse" id="NavbarNav">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search..." name="search" id="find" aria-label="Search" onclick="search()">
+                </div>
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#products">Products</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#aboutUs">About Us</a>
+                    </li>
+                    <li class ="nav-item active">
+                        <a class="nav-link" href="index.html">DE</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="home">
+            <div class="overlay">
+                <button id="continue-btn" onclick="window.location.href='#work'">Inspire yourself</button>
+                <p id="makePlace"></p>
+            </div>
+        </div>
+        <h1 id="work">Our Work:</h1>
+        <div class="card_container">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="img\home.png" alt="Advent Wreath" style="width:100%;">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Artificial Advent Wreath</h1>
+                        <p>Christmas Decoration</p>
+                        <p>Our artificial red advent wreath is a beautiful and durable decoration for the Christmas season, designed with dense green fir, four red candles, and Christmas tree balls. It adds a festive atmosphere to your home and can be reused year after year.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="img\home2.png" alt="Spice Wreath" style="width:100%;">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Real Spice Wreath</h1>
+                        <p>Spice Arrangement</p>
+                        <p>Our real spice wreath is a beautiful and durable decoration for the whole year. It is adorned with many fragrant spices and adds a beautiful and aromatic atmosphere to your home.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="img\strauss_Card.png" alt="Gewuerzstrauss" style="width:80%;">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Real Spice Bouquet</h1>
+                        <p>Spice Arrangement</p>
+                        <p>Our spice bouquet is a beautiful and durable decoration for the whole year. It is adorned with many fragrant spices and adds a beautiful and aromatic atmosphere to your home.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h1>What Does Our Company Do?</h1>
+            <p>Floradaniela is a Salzburg-based company specializing in the distribution of Salzburg souvenirs, Christmas decorations, and spice arrangements (spice bouquet, spice wreath). Explore our high-quality handmade products and immerse yourself in the beauty and charm of Salzburg. Be inspired by our variety and quality.</p>
+        </div>
+        <br><br>
+            
+        <h1 id="products">Our Products</h2>
+        <div class="card_container">
+            <div class="product-card">
+                <img src="img\türkranz.png" alt="Wreath" style="width:100%">
+                <h2>Festive Christmas Wreath</h2>
+                <p class="price">€ 39.90</p>
+                <p>Festive Christmas wreath featuring Santa Claus and Christmas baubles.</p>
+            </div>
+            
+            <div class="product-card">
+                <img src="img\kerzengesteck.jpg" alt="Arrangement" style="width:100%">
+                <h2>Christmas Candle Arrangement</h2>
+                <p class="price">€ 29.90</p>
+                <p>Christmas candle arrangement with a white candle, bow, and fir branches.</p>
+            </div>
+            
+            <div class="product-card">
+                <img src="img\Engelgesteck.jpg" alt="Arrangement" style="width:100%">
+                <h2>Christmas Angel Arrangement</h2>
+                <p class="price">€ 34.90</p>
+                <p>Christmas angel arrangement with an angel figurine, bow, and fir branches.</p>
+            </div>
+            
+            <div class="product-card">
+                <img src="img\Rehkranz.jpg" alt="Wreath" style="width:100%">
+                <h2>Festive Christmas Wreath</h2>
+                <p class="price">€ 39.90</p>
+                <p>Festive Christmas wreath with a deer, bow, Christmas baubles, and fir branches.</p>
+            </div>
+            
+            <div class="product-card">
+                <img src="img\Rehstern.jpg" alt="Wreath" style="width:100%">
+                <h2>Festive Christmas Wreath</h2>
+                <p class="price">€ 33.90</p>
+                <p>Heart-shaped festive Christmas wreath with a deer, bow, Christmas baubles, and fir branches.</p>
+            </div>
+            
+            <div class="product-card">
+                <img src="img\straussblau.jpg" alt="Spice Bouquet" style="width:100%">
+                <h2>Blue Spice Bouquet</h2>
+                <p class="price">€ 18.90</p>
+                <p>Real large spice bouquet handcrafted with heather, cinnamon, beech nuts, cloves, pumpkin seeds, and more.</p>
+            </div>
+            
+            <div class="product-card">
+                <img src="img\straussgruen.jpg" alt="Spice Bouquet" style="width:100%">
+                <h2>Green Spice Bouquet</h2>
+                <p class="price">€ 10.90</p>
+                <p>Real small spice bouquet handcrafted with heather, cinnamon, beech nuts, cloves, pumpkin seeds, and more.</p>
+            </div>
+            
+            <div class="product-card">
+                <img src="img\straussrosa.jpg" alt="Spice Bouquet" style="width:100%">
+                <h2>Pink Spice Bouquet</h2>
+                <p class="price">€ 5.90</p>
+                <p>Real mini spice bouquet handcrafted with heather, cinnamon, beech nuts, cloves, pumpkin seeds, and more.</p>
+            </div>
+            
+            <div class="product-card">
+                <img src="img\straussRotGross.jpg" alt="Spice Bouquet" style="width:50%">
+                <h2>Deep Red Spice Bouquet</h2>
+                <p class="price">€ 99.00</p>
+                <p>Real large spice bouquet handcrafted with cinnamon, beech nuts, cloves, star anise, and more.</p>
+            </div>
+            
+            <div class="product-card">
+                <img src="img\straussgruen15.jpg" alt="Spice Bouquet" style="width:56%">
+                <h2>Green Spice Bouquet</h2>
+                <p class="price">€ 27.90</p>
+                <p>Real large spice bouquet handcrafted with star anise, cinnamon, beech nuts, cloves, and more.</p>
+            </div>
+            
+            <div class="product-card">
+                <img src="img\gewHufeisen.jpg" alt="Spice Horseshoe" style="width:56%">
+                <h2>Blue Spice Horseshoe</h2>
+                <p class="price">€ 15.90</p>
+                <p>Authentic spice horseshoe handcrafted with heather, cinnamon, beech nuts, cloves, pumpkin seeds, and more.</p>
+            </div>
+            
+            <div class="product-card">
+                <img src="img\gewKranzKlein.jpg" alt="Spice Wreath" style="width:43%">
+                <h2>Small Carnation Wreath</h2>
+                <p class="price">€ 12.90</p>
+                <p>Small authentic carnation wreath handcrafted with carnations. Available in all color variations.</p>
+            </div>
+            
+            <div class="product-card">
+                <img src="img\gewKranzMittel.jpg" alt="Spice Wreath" style="width:89%">
+                <h2>Medium Spice Wreath</h2>
+                <p class="price">€ 27.50</p>
+                <p>Medium authentic spice wreath handcrafted with carnations, cinnamon, star anise, and more. Available in all colors.</p>
+            </div>
+            
+            <div class="product-card">
+                <img src="img\gewHerz.jpg" alt="Spice Heart" style="width:57%">
+                <h2>Red Spice Heart</h2>
+                <p class="price">€ 17.90</p>
+                <p>Real wooden spice heart handcrafted with heather, cinnamon, beech nuts, cloves, pumpkin seeds, and more.</p>
+            </div>
+            
+            <div class="product-card">
+                <img src="img\gewGebinde.jpg" alt="Spice Bundle" style="width:30%; transform: rotate(90deg);">
+                <h2>Blue Spice Bundle</h2>
+                <p class="price">€ 39.90</p>
+                <p>Real large spice bundle handcrafted with cinnamon, beech nuts, cloves, star anise, and more.</p>
+            </div>
+            
+            <div class="product-card">
+                <img src="img\gewLöffel.jpg" alt="Spice Spoon" style="width:21%; transform: rotate(90deg);">
+                <h2>Large Spice Spoon</h2>
+                <p class="price">€ 12.90</p>
+                <p>Real large wooden spice spoon handcrafted with heather, cinnamon, beech nuts, cloves, pumpkin seeds, and more.</p>
+            </div>
+            
+            <div class="product-card">
+                <img src="img\gewKalender.jpg" alt="Spice Calendar" style="width:35%">
+                <h2>Mini Spice Calendar</h2>
+                <p class="price">€ 14.90</p>
+                <p>Real mini spice calendar handcrafted with heather, cinnamon, beech nuts, cloves, pumpkin seeds, and more.</p>
+            </div>
+            
+            <div class="product-card">
+                <img src="img\pianoGold.jpg" alt="Souvenir" style="width:49%">
+                <h2>Gilded Piano Music Box</h2>
+                <p class="price">€ 39.90</p>
+                <p>Gilded piano music box playing Mozart's "Eine kleine Nachtmusik" with a clock.</p>
+            </div>
+            
+            <div class="product-card">
+                <img src="img\pianoSchwarz.jpg" alt="Souvenir" style="width:60%">
+                <h2>Black Piano Music Box</h2>
+                <p class="price">€ 24.90</p>
+                <p>Piano music box playing Mozart's "Eine kleine Nachtmusik." Available in black and white.</p>
+            </div>
+            
+            <div class="product-card">
+                <img src="img\glassPiano.jpg" alt="Souvenir" style="width:56%">
+                <h2>Glass Piano Music Box</h2>
+                <p class="price">€ 59.00</p>
+                <p>Glass piano music box playing Mozart's "Eine kleine Nachtmusik."</p>
+            </div>
+            
+            <div class="product-card">
+                <img src="img\spieluhrVogel.jpg" alt="Souvenir" style="width:37%">
+                <h2>Bird Music Box</h2>
+                <p class="price">€ 59.00</p>
+                <p>Music box with a rotating bird and Swarovski crystals.</p>
+            </div>
+            
+            <div class="product-card">
+                <img src="img\swarovskiEiMini.jpg" alt="Souvenir" style="width:37%">
+                <h2>Mini Fabergé Egg with Swarovski Crystals</h2>
+                <p class="price">€ 29.00</p>
+                <p>Authentic mini Fabergé egg with Swarovski crystals and stand. Available in green, blue, and white.</p>
+            </div>
+            
+            <div class="product-card">
+                <img src="img\swarovskiEi.jpg" alt="Souvenir" style="width:37%">
+                <h2>Large Fabergé Egg with Swarovski Crystals</h2>
+                <p class="price">€ 99.00</p>
+                <p>Authentic large Fabergé egg with Swarovski crystals and music.</p>
+            </div>
+            
+            <div class="product-card">
+                <img src="img\festung.jpg" alt="Souvenir" style="width:70%">
+                <br><br><br>
+                <h2>Hohensalzburg Fortress</h2>
+                <p class="price">€ 11.90</p>
+                <p>Miniature ceramic model of Hohensalzburg Fortress.</p>
+            </div>
+            
+            <div class="product-card">
+                <img src="img\mozBueste.jpg" alt="Souvenir" style="width:38%">
+                <h2>Mozart Bust in White</h2>
+                <p class="price">€ 5.90 € 9.90 € 11.90</p>
+                <p>White Mozart bust as a small souvenir from Salzburg. Available in 3 different sizes: small, medium, and large.</p>
+            </div>
+            
+            <div class="product-card">
+                <img src="img\schneekugel.jpg" alt="Souvenir" style="width:56%">
+                <h2>"Salzburg" Snow Globe Mini</h2>
+                <p class="price">€ 10.90</p>
+                <p>Beautiful mini "Salzburg" snow globe as a small souvenir.</p>
+            </div>
+            
+            <div class="product-card">
+                <img src="img\schneekugel.jpg" alt="Souvenir" style="width:56%">
+                <h2>"Salzburg" Snow Globe</h2>
+                <p class="price">€ 14.90</p>
+                <p>Beautiful "Salzburg" snow globe as a small souvenir.</p>
+            </div>
+            
+            <div class="product-card">
+                <img src="img\schneekugelMoz.jpg" alt="Souvenir" style="width:44%">
+                <h2>Mozart Snow Globe</h2>
+                <p class="price">€ 13.90</p>
+                <p>Beautiful snow globe featuring Mozart as a small souvenir.</p>
+            </div>
+            
+        </div>
+        <center>
+            <div id="load-more"> Load more </div>
+        </center>
+        <script>
+            //JavaScript Code for the Load More button
+            let loadMoreBtn = document.querySelector('#load-more');
+            let currentItem = 4;
+
+            loadMoreBtn.onclick = () => {
+                    let boxes = [...document.querySelectorAll('.card_container .product-card')];
+                    currentItem += 4;
+                    for (var i = currentItem - 4; i < currentItem + 4; i++) {
+                        boxes[i].style.display = 'inline-block';
+                    }
+
+
+                    if (currentItem + 4 >= boxes.length) {
+                        loadMoreBtn.style.display = 'none';
+                    }
+                }
+                //Load More Button ends here!
+
+            //Burger Menu starts here:
+            const hamburger = document.querySelector(".hamburger");
+            const navMenu = document.querySelector(".navbar-nav");
+
+            hamburger.addEventListener("click", () => {
+                hamburger.classList.toggle("active");
+                navMenu.classList.toggle("active");
+            })
+
+            document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+                    hamburger.classList.remove("active");
+                    navMenu.classList.remove("active");
+                }))
+            //Burger Menu ends here
+            /*Search starts here*/
+            function search() {
+                let filter = document.getElementById('find').value.toUpperCase();
+                let item = document.querySelectorAll('.product-card');
+
+                for (let i = 0; i < item.length; i++) {
+                    let a = item[i].getElementsByTagName('h2')[0];
+                    let value = a.innerHTML || a.innerText || a.textContent;
+
+                    if (filter !== '') {
+                        // Wenn nach etwas gesucht wird, alle Karten anzeigen, die dem Suchbegriff entsprechen
+                        if (value.toUpperCase().indexOf(filter) > -1) {
+                            item[i].style.display = 'inline-block';
+                        } else {
+                            item[i].style.display = 'none';
+                        }
+                    } else {
+                        // Ansonsten nur die ersten zwei Zeilen der Karten anzeigen
+                        if (i < 8) {
+                            item[i].style.display = 'inline-block';
+                        } else {
+                            item[i].style.display = 'none';
+                        }
+                    }
+                }
+            }
+
+            // Eventlistener, um die Suchfunktion auszuführen, wenn das DOM vollständig geladen ist
+            document.addEventListener("DOMContentLoaded", function() {
+                // Input-Element abrufen
+                let input = document.querySelector("input[name='search']");
+
+                // Eventlistener hinzufügen, um die Suchfunktion auf keyup-Ereignisse auszuführen
+                input.addEventListener("keyup", search);
+            });
+            /*Search ends here*/
+        </script>
+
+        <!--Contact-->
+        <h1 id="contact">Contact us!</h1>
+        <div id="contact-section">
+            <center>
+                <p>Alter Markt, 5020 Salzburg, Austria</p>
+                <p>Phone: +43 676 34 10 175</p>
+                <a href="mailto:carakciev@hotmail.com">carakciev@hotmail.com</a>
+            </center>
+        </div>
+        <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2680.0592973154507!2d13.042578976826654!3d47.7996862746235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47769179d341e30d%3A0x24dc2cec7bd2cf56!2sFloradaniela%20-%20Daniela%20Carakcieva!5e0!3m2!1sde!2sat!4v1689444568783!5m2!1sde!2sat"
+                width="1340" height="600" style="border:0; border-radius: 5px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></center>
+        <h1 id="aboutUs">About Us:</h1>
+        <div id="aboutus-section">
+            <h3>Welcome to Floradaniela!</h3>
+            <p>Since March 1st, 2020, we have been a proud company dedicated to the trade of spice bundles and other lovingly crafted products. We are a small family-owned business based in Salzburg and founded by Mrs. Daniela Carakcieva.</p>
+            <p>Our story began with Mrs. Carakcieva's passion for spice bundles. As a native of North Macedonia, she was fascinated by the craftsmanship and beauty of these traditional wreaths and bouquets. This enthusiasm motivated her to start her own business and
+                make these unique products accessible to others.</p>
+            <p>Since then, Mrs. Carakcieva has been leading Floradaniela with dedication and pride. Our products are of high quality and carefully handcrafted. We place great emphasis on using top-quality spices and materials to ensure that our spice bundles are
+                        not only visually appealing but also emit a delightful fragrance.</p>
+            <p>However, our range is not limited to spice bundles. We also offer a variety of souvenirs from Salzburg, Christmas decorations, and floral decorations. Our products reflect the unique beauty and charm of this city.</p>
+            <p>We take pride in offering our customers high-quality products crafted with attention to detail. Our mission is to enhance your living spaces and bring a piece of Salzburg to your home.</p>
+            <p>Thank you for choosing Floradaniela. We look forward to presenting our wonderful products to you and helping you create unforgettable memories.</p>
+        </div>
+                
+        <div class="end-section">
+            <div class="overlay"></div>
+                <!-- container -->
+            <div class="end-container">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="footer-section">
+            <hr>
+            <ul id="footer-list">
+                <h6>Floradaniela</h6>
+                <li>Alter Markt, 5020 Salzburg, Austria</li>
+                <li>+43 676 34 10 175</li>
+                <a href="mailto:carakciev@hotmail.com">carakciev@hotmail.com</a>
+                <li>Opening Hours: Mon-Fri 10:00 AM - 6:00 PM</li>
+                <a href="impressum.html">Imprint</a>
+            </ul>
+            <center>
+                <p>For special requests, please call us.</p>
+            </center>
+            <div id="socialMedia">
+                <center>
+                    <a href="https://www.instagram.com/floradaniela_/?hl=de" target="_blank"><img src="img\instagram.png" alt="instagram"></a>
+                    <a href="https://www.facebook.com/p/Floradaniela-100063634806178/" target="_blank"><img src="img\facebook.png" alt="facebook"></a>
+                </center>
+            </div>
+            <div id="copyright">
+                <center><img src="img\copyright.png" alt="copyright"> Floradaniela </center>
+                <center>
+                    <p>Designed by Gjorge Carakciev</p>
+                </center>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
