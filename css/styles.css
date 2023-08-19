@@ -568,6 +568,16 @@ footer {
     cursor: pointer;
 }
 
+.transparent{
+    height: 25px;
+    width: 25px;
+    background-color: rgba(255, 255, 255, 0.418);
+    border-radius: 50%;
+    border: 1px solid #212529;
+    display: inline-block;
+    cursor: pointer;
+}
+
 
 /*Product section ends here*/
 
@@ -646,6 +656,9 @@ footer {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+.team{
+    padding: 5rem;
 }
 
 #CEO img{
