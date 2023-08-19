@@ -470,10 +470,10 @@
                 <br><br><br>
                 <h2>Festung Hohensalzburg</h2>
                 <div class="Dots">
-                    <span class="transparent" onclick='changeProductPrice("€ 6,90")'>S</span>
-                    <span class="transparent" onclick='changeProductPrice("€ 11,90")'>M</span>
+                    <span class="transparent" onclick='changeProductPrice(1, "€ 6,90")'>S</span>
+                    <span class="transparent" onclick='changeProductPrice(1, "€ 11,90")'>M</span>
                 </div>
-                <p class="price" id="prices">€ 6.90</p>
+                <p class="price" id="prices1">€ 6.90</p>
                 <p>Miniatur der Festung Hohensalzburg aus Keramik.</p>
             </div>
 
@@ -481,11 +481,11 @@
                 <img src="img\mozBueste.jpg" id="productImage" alt="Souvenir" style="width:38%">
                 <h2>Mozart Büste in Weiß</h2>
                 <div class="Dots">
-                    <span class="transparent" onclick='changeProductPrice("€ 5,90")'>S</span>
-                    <span class="transparent" onclick='changeProductPrice("€ 9,90")'>M</span>
-                    <span class="transparent" onclick="changeProductPrice('€ 11,90')">L</span>
+                    <span class="transparent" onclick='changeProductPrice(2, "€ 5,90")'>S</span>
+                    <span class="transparent" onclick='changeProductPrice(2, "€ 9,90")'>M</span>
+                    <span class="transparent" onclick="changeProductPrice(2, '€ 11,90')">L</span>
                 </div>
-                <p class="price" id="prices">€ 5.90</p>
+                <p class="price" id="prices2">€ 5.90</p>
                 <p>Weiße Mozartbüste als kleines Andenken an Salzburg. Verfügbar in 3 verschiedenen Größen: klein, mittel und groß.</p>
             </div>
 
@@ -592,8 +592,8 @@
             /*Change Product-Image function ends here*/
 
             /*Change product-size starts here*/
-            function changeProductPrice(newPrice) {
-                let displayedPrice = document.querySelector("#prices");
+            function changeProductPrice(productNumber, newPrice) {
+                let displayedPrice = document.querySelector(`#prices${productNumber}`);
 
                 if (displayedPrice) {
                     displayedPrice.textContent = newPrice;
