@@ -329,7 +329,7 @@
                     <span class="greenDot" onclick="changeProductImage(11, 'img/gewGebinde/gewGebindegruen.jpg')"></span>
                 </div>
                 <p class="price">€ 39,90</p>
-                <p>Real spice bundle in large size, hand-tied with cinnamon, beech nuts, cloves, star anise, and much more. Dimensions (H x W): 25cm x 12cm.</p>
+                <p>Real spice bundle in large size, hand-tied with cinnamon, beech nuts, cloves, star anise, and much more. <br>Dimensions (H x W): 25cm x 12cm.</p>
             </div>
 
             <div class="product-card">
@@ -435,23 +435,23 @@
                 <br><br><br>
                 <h2>Hohensalzburg Fortress</h2>
                 <div class="Dots">
-                    <span class="transparent" onclick='changeProductPrice(1, "€ 6,90")'>S</span>
-                    <span class="transparent" onclick='changeProductPrice(1, "€ 11,90")'>M</span>
+                    <span class="transparent" onclick='changeProductPrice(1, "€ 6,90"); changeProductLength(1, "Length: 5 cm");'>S</span>
+                    <span class="transparent" onclick='changeProductPrice(1, "€ 11,90"); changeProductLength(1, "Length: 10 cm");'>M</span>
                 </div>
                 <p class="price" id="prices1">€ 6.90</p>
-                <p>Miniature ceramic model of Hohensalzburg Fortress.</p>
+                <p>Miniature ceramic model of Hohensalzburg Fortress. <br><span id="length1">Length: 5 cm</span>.</p>
             </div>
             
             <div class="product-card">
                 <img src="img\mozBueste.jpg" alt="Souvenir" style="width:38%">
                 <h2>Mozart Bust in White</h2>
                 <div class="Dots">
-                    <span class="transparent" onclick='changeProductPrice(2, "€ 5,90")'>S</span>
-                    <span class="transparent" onclick='changeProductPrice(2, "€ 9,90")'>M</span>
-                    <span class="transparent" onclick="changeProductPrice(2, '€ 11,90')">L</span>
+                    <span class="transparent" onclick='changeProductPrice(2, "€ 5,90"); changeProductLength(2, "Height: 8 cm");'>S</span>
+                    <span class="transparent" onclick='changeProductPrice(2, "€ 9,90"); changeProductLength(2, "Height: 12 cm");'>M</span>
+                    <span class="transparent" onclick='changeProductPrice(2, "€ 11,90"); changeProductLength(2, "Height: 15 cm");'>L</span>
                 </div>
                 <p class="price" id="prices2">€ 5.90</p>
-                <p>White Mozart bust as a small souvenir from Salzburg. Available in 3 different sizes: small, medium, and large.</p>
+                <p>White Mozart bust as a small souvenir from Salzburg. Available in 3 different sizes: small, medium, and large. <span id="length2">Height: 8 cm</span>.</p>
             </div>
             
             <div class="product-card">
@@ -569,6 +569,18 @@
             }
 
             /*Change product-size starts here*/
+
+            /*Change product-size starts here*/
+            function changeProductLength(productNumber, newLength){
+                let displayedLength = document.querySelector(`#length${productNumber}`);
+                if(displayedLength){
+                    displayedLength.textContent = newLength;
+                } else{
+                    console.error("Element with class 'length' not found");
+                }
+            }
+
+            /*Change product-size ends here*/
         </script>
 
         <!--Contact-->
