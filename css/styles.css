@@ -451,6 +451,10 @@ footer {
     display: none;
 }
 
+#productImage{
+    border-radius: 5px;
+}
+
 .card_container .product-card:nth-child(1),
 .card_container .product-card:nth-child(2),
 .card_container .product-card:nth-child(3),
